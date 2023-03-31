@@ -11,7 +11,10 @@ form.addEventListener('submit', (event) => {
   xhr.onload = function() {
     if (xhr.status === 200) {
       const response = xhr.responseText;
-      document.write(response);
+      const parser = new DOMParser();
+      const htmlDoc = parser.parseFromString(response, 'text/html');
+      const body = htmlDoc.querySelector('body');
+      document.write(body.innerHTML);
     } else {
       console.log('Request failed.  Returned status of ' + xhr.status);
     }
