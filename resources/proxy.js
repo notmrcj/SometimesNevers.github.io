@@ -4,7 +4,7 @@ const urlInput = document.querySelector('#url');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const url = urlInput.value;
-  const proxyUrl = 'https://cors-anywhere.herokuapp.com/' + encodeURIComponent(url);
+  const proxyUrl = 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(url);
   const xhr = new XMLHttpRequest();
   xhr.open('GET', proxyUrl);
   xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
