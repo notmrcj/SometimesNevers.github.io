@@ -1,14 +1,16 @@
-﻿body {
-  background-color: blue;
+body {
+  background-color: #100021;
   color: rgb(227, 224, 255);
   margin: 0; 
   padding: 0;
 }
+
 /* font */
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 36px;
 }
+
 /* headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -22,6 +24,7 @@ a {
   text-decoration: none;
   display: block;
 }
+
 /* buttons */
 button {
   color: #fff;
@@ -54,43 +57,54 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .game-img {
   width: 200px;
   height: 200px;
   display: block;
   margin: 0 auto;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
+
 .gcontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
+
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .col {
-    flex: 0 0 auto;
-    width: 30%;
-    margin: 40px auto;
-    text-align: center;
+  flex: 0 0 auto;
+  width: 30%;
+  margin: 40px auto;
+  text-align: center;
 }
 
 .rounded {
-    border-radius: 15px;
+  border-radius: 15px;
 }
+
 /* fix for nav text alignment */
 nav {
   width: 100%;
   text-align: center;
 }
+
+nav button {
+  margin: 0 10px;
+}
+
 .small-text {
   font-size: 28px;
 }
@@ -103,9 +117,11 @@ nav {
 .green-text {
   color: #329485;
 }
+
 .light-blue-text {
   color: #327894;
 }
+
 .lighter-blue-text {  
   color: #417cc4;
 }
